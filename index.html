@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔄 Unit Converter</h1>
+        <p class="subtitle">Convert all 7 fundamental SI units</p>
+
+        <div class="unit-selector">
+            <div class="unit-buttons">
+                <button class="unit-btn active" data-unit="length">Length (m)</button>
+                <button class="unit-btn" data-unit="mass">Mass (kg)</button>
+                <button class="unit-btn" data-unit="time">Time (s)</button>
+                <button class="unit-btn" data-unit="current">Current (A)</button>
+                <button class="unit-btn" data-unit="temperature">Temperature (K)</button>
+                <button class="unit-btn" data-unit="amount">Amount (mol)</button>
+                <button class="unit-btn" data-unit="luminosity">Luminosity (cd)</button>
+            </div>
+        </div>
+
+        <div class="converter-section">
+            <div class="input-group">
+                <label>From:</label>
+                <select id="fromUnit"></select>
+            </div>
+
+            <div class="input-group">
+                <label>Value:</label>
+                <input type="number" id="inputValue" placeholder="Enter value" step="any">
+            </div>
+
+            <button class="swap-btn" id="swapBtn">⇅ Swap Units</button>
+
+            <div class="input-group">
+                <label>To:</label>
+                <select id="toUnit"></select>
+            </div>
+
+            <div class="result" id="result">0</div>
+            <div class="formula" id="formula"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
