@@ -16,5 +16,4 @@ A web-based unit converter that supports all 7 SI fundamental units.
 ## 🌐 Live Demo
 https://coder-vinay-arc.github.io/Fundamental-unit-converter/
 
-## 📸 Preview
-(Add screenshot here)
+
